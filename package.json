@@ -1,0 +1,52 @@
+{
+  "name": "bi-enum",
+  "version": "1.0.0",
+  "description": "BiEnum 是一种静态枚举方案，是 TypeScript 原生枚举（enum）的加强版。BiEnum is a static enumeration scheme, which is an enhanced version of TypeScript's native enum.",
+  "homepage": "https://github.com/memo-cn/bi-enum#readme",
+  "main": "dist/bi-enum.umd.js",
+  "module": "dist/bi-enum.es.js",
+  "types": "dist/bi-enum.d.ts",
+  "scripts": {
+    "tsc": "rimraf ./dist && tsc",
+    "rollup -c": "rimraf ./dist && rollup -c",
+    "rimraf dist": "rimraf ./dist",
+    "npm publish": "npm publish"
+  },
+  "keywords": [
+    "bidirectional",
+    "enum"
+  ],
+  "files": [
+    "dist",
+    "package.json",
+    "CHANGELOG.md",
+    "README.en-US.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "author": {
+    "name": "memo",
+    "email": "i@memo.cool"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/memo-cn/bi-enum.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "email": "i@memo.cool",
+    "url": "https://github.com/memo-cn/bi-enum/issues"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^9.0.2",
+    "rimraf": "^3.0.2",
+    "rollup-plugin-dts": "^5.0.0",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.3"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}
