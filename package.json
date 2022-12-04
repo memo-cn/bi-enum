@@ -1,6 +1,6 @@
 {
   "name": "bi-enum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BiEnum 是一种静态枚举方案，是 TypeScript 原生枚举（enum）的加强版。BiEnum is a static enumeration scheme, which is an enhanced version of TypeScript's native enum.",
   "homepage": "https://github.com/memo-cn/bi-enum#readme",
   "main": "dist/bi-enum.umd.js",
@@ -10,7 +10,7 @@
     "tsc": "rimraf ./dist && tsc",
     "rollup -c": "rimraf ./dist && rollup -c",
     "rimraf dist": "rimraf ./dist",
-    "npm publish": "npm publish"
+    "npm publish": "if [[ -d ./dist ]]; then npm publish; else echo '请先编译出产物，再发包。'; fi"
   },
   "keywords": [
     "bidirectional",
